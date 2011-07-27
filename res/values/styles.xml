@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WorkspaceIcon">
+        <item name="android:textSize">13dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/shortcut_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+    <style name="WorkspaceIcon.Text">
+        <item name="android:background">@drawable/text_background</item>
+    </style>
+    <style name="HotseatButton">
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:background">@drawable/hotseat_bg_center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="HotseatButton.Left">
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@drawable/hotseat_bg_left</item>
+    </style>
+    <style name="HotseatButton.Right">
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:background">@drawable/hotseat_bg_right</item>
+    </style>
+
+</resources>

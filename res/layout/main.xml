@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:src="@drawable/wallpaper_zanzibar"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:id="@+id/Wallpaper" android:scaleType="centerCrop" />
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:id="@+id/Body">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="match_parent"
+			android:orientation="vertical" android:id="@+id/Workspace">
+			<LinearLayout android:id="@+id/Row1"
+				android:layout_width="match_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<LinearLayout android:id="@+id/Row2"
+				android:layout_width="match_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<LinearLayout android:id="@+id/Row3"
+				android:layout_width="match_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<LinearLayout android:id="@+id/Row4"
+				android:layout_width="match_parent" android:layout_height="wrap_content"
+				android:layout_weight="1">
+				<LinearLayout android:id="@+id/Row4Cell1"
+					android:layout_weight="1" android:layout_height="match_parent"
+					android:layout_width="match_parent" />
+				<LinearLayout android:id="@+id/Row4Cell2"
+					android:layout_weight="1" android:layout_height="match_parent"
+					android:layout_width="match_parent" />
+				<LinearLayout android:id="@+id/Row4Cell3"
+					android:layout_weight="1" android:layout_height="match_parent"
+					android:layout_width="match_parent" />
+				<LinearLayout android:id="@+id/Row4Cell4"
+					android:layout_weight="1" android:layout_height="match_parent"
+					android:orientation="vertical" android:gravity="center"
+					android:layout_width="match_parent">
+					<ImageView android:src="@drawable/mail_icon" android:id="@+id/imageView3"
+						android:layout_height="wrap_content" android:layout_width="wrap_content" />
+					<TextView android:layout_height="wrap_content"
+						android:text="Email" style="@style/WorkspaceIcon.Text"
+						android:layout_width="wrap_content" android:textColor="#FFFFFF" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/ControlBar">
+			<ImageView android:src="@drawable/ic_home_arrows_2_normal"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_alignParentLeft="true" android:id="@+id/LeftHomeArrows" />
+			<RelativeLayout android:id="@+id/all_apps_button_cluster"
+				android:layout_width="fill_parent" android:layout_height="62dp"
+				android:layout_gravity="bottom|center_horizontal"
+				android:paddingTop="2dip">
+				<ImageView style="@style/HotseatButton" android:id="@+id/all_apps_button"
+					android:layout_centerHorizontal="true"
+					android:layout_alignParentBottom="true" android:src="@drawable/all_apps_button_normal" />
+				<ImageView android:id="@+id/hotseat_left" style="@style/HotseatButton.Left"
+					android:layout_toLeftOf="@id/all_apps_button" android:src="@drawable/hotseat_phone_normal" />
+				<ImageView android:id="@+id/hotseat_right" style="@style/HotseatButton.Right"
+					android:layout_toRightOf="@id/all_apps_button" android:src="@drawable/hotseat_browser_normal" />
+			</RelativeLayout>
+			<ImageView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/RightHomeArrows"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/ic_home_arrows_2_normal_right" />
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>
